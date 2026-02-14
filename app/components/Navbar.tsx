@@ -7,7 +7,7 @@ const navbar = () => {
     useOutletContext<AuthContext>();
 
   const handleAuthClick = async () => {
-    if (isSignedIn) { 
+    if (isSignedIn) {
       try {
         await signOut();
       } catch (e) {
